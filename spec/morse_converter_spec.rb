@@ -10,7 +10,7 @@ describe MorseConverter do
   let(:encryptor) {}
 
   describe '#encrypt' do
-    subject { described_class.new(string_message, encryptor).encrypt }
+    subject { described_class.new(string_message, encryptor).encode }
 
     context 'with default encryption' do
       context 'when message is a sentence' do

@@ -13,7 +13,7 @@ class EnigmaProcessor
     return '' unless text.is_a? String
 
     text.each_line.map do |line|
-      @encoder.new(line, @encripter).encrypt
+      @encoder.new(line, @encripter).encode
     end.join('\n')
   end
 end

@@ -12,7 +12,7 @@ class DummyEncoder
     @encripter = encripter || ObfuscationService
   end
 
-  def encrypt
+  def encode
     @message
   end
 end

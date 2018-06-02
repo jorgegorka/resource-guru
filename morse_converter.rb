@@ -51,7 +51,7 @@ class MorseConverter
     @encripter = encripter || ObfuscationService
   end
 
-  def encrypt
+  def encode
     message.upcase.split(' ').map do |word|
       word_to_morse(word)
     end.join(WORD_SEPARATOR)
