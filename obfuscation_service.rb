@@ -11,7 +11,7 @@ class ObfuscationService
       return unless message
 
       message.gsub(/(\.+)|(\-+)/).map do |matched_string|
-        matched_string[0] == MORSE_DOT_CHARACTER ? transform_dots(matched_string) : transform_dashses(matched_string)
+        matched_string[0] == MORSE_DOT_CHARACTER ? transform_dots(matched_string) : transform_dashes(matched_string)
       end.join('')
     end
 
@@ -21,7 +21,7 @@ class ObfuscationService
       string.length
     end
 
-    def transform_dashses(string)
+    def transform_dashes(string)
       (ASCII_UPPERCASE_LETTERS + string.length).chr
     end
   end
