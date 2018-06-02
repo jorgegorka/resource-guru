@@ -1,7 +1,7 @@
 # Receives a text and encodes it using provided encoder and encrypter
 # If our encryption service is compromised it's very easy to replace either encoder and/or encrypter
 class EnigmaProcessor
-  attr_reader :text, :encoded_text
+  attr_reader :text
 
   def initialize(text, options = {})
     @text = text
